@@ -67,7 +67,7 @@
   ; "#1a1b26" "#1a1b26" => Editor background (Night)
 
   ;; name        default   256       16
-  ((bg         '("#1a1b26" nil       nil            ))
+  ((bg         '("#000000" nil       nil            ))
    (bg-alt     '("#13141c" nil       nil            ))
    (base0      '("#414868" "#414868" "black"        ))
    (base1      '("#51587a" "#51587a" "brightblack"  ))
@@ -79,7 +79,7 @@
    (base7      '("#b0bae3" "#b0bae3" "brightblack"  ))
    (base8      '("#c0caf5" "#c0caf5" "white"        ))
    (fg-alt     '("#c0caf5" "#c0caf5" "brightwhite"  ))
-   (fg         '("#a9b1d6" "#a9b1d6" "white"        ))
+   (fg         '("#eceff4" "#eceff4" "white"        ))
 
    (grey       base4)
    (red        '("#f7768e" "#f7768e" "red"          ))
