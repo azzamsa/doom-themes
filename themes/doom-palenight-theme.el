@@ -29,10 +29,10 @@ Can be an integer to determine the exact padding."
 ;;; Theme definition
 
 (def-doom-theme doom-palenight
-  "A dark theme inspired by Material-Palenight"
+    "A dark theme inspired by Material-Palenight"
 
   ;; name        default   256       16
-  ((bg         '("#292D3E" nil       nil))
+  ((bg         '("black" nil       nil))
    (bg-alt     '("#242837" nil       nil))
    (base0      '("#1c1f2b" "black"   "black"))
    (base1      '("#1e212e" "#262626" "brightblack"))
@@ -84,6 +84,7 @@ Can be an integer to determine the exact padding."
    (vc-added       green)
    (vc-deleted     red)
 
+   ;; custom categories
    ;; custom categories
    (modeline-bg     base2)
    (modeline-bg-alt (doom-darken bg 0.01))
@@ -140,6 +141,8 @@ Can be an integer to determine the exact padding."
    (rainbow-delimiters-depth-7-face :foreground blue)
    (rainbow-delimiters-depth-8-face :foreground teal)
    (rainbow-delimiters-depth-9-face :foreground dark-cyan)
+   ;; ;; magit
+   (magit-diff-added-highlight   :foreground bg)
    ;;;; rjsx-mode
    (rjsx-tag :foreground red)
    (rjsx-attr :foreground yellow :slant 'italic :weight 'medium)))
