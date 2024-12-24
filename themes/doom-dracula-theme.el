@@ -51,10 +51,10 @@ determine the exact padding."
 ;;; Theme definition
 
 (def-doom-theme doom-dracula
-  "A dark theme based on Dracula theme"
+    "A dark theme based on Dracula theme"
 
   ;; name        default   256       16
-  ((bg         '("#282a36" "#262626" "black"        ))
+  ((bg         '("#000000" "#000000" "black"        ))
    (bg-alt     '("#1E2029" "#1c1c1c" "black"        ))
    (base0      '("#1E2029" "#1c1c1c" "black"        ))
    (base1      '("#282a36" "#1e1e1e" "brightblack"  ))
