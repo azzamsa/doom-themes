@@ -72,7 +72,7 @@
    (violet     '("#fca7ea" "#fca7ea" "brightmagenta"))
    (cyan       '("#86e1fc" "#86e1fc" "brightcyan"   ))
    (dark-cyan  '("#86e1fc" "#86e1fc" "cyan"         ))
-                                        ; Additional custom colors
+   ;; Additional custom colors
    (dark-green '("#4fd6be" "#4fd6be" "green"        ))
 
    ;; face categories -- required for all themes
@@ -80,8 +80,8 @@
    (vertical-bar   (doom-lighten bg 0.05))
    (selection      base0)
    (builtin        red)
-   (comments       (if doom-tokyo-night-moon-brighter-comments (doom-lighten "#636da6" 0.25) "#636da6"))
-   (doc-comments   (doom-lighten (if doom-tokyo-night-moon-brighter-comments (doom-lighten "#636da6" 0.25) "#636da6") 0.25))
+   (comments       (if doom-tokyo-night-moon-brighter-comments "#9399b2" "#636da6"))
+   (doc-comments   comments)
    (constants      orange)
    (functions      blue)
    (keywords       magenta)
