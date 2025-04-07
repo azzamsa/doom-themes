@@ -257,6 +257,10 @@
    (org-block-begin-line :background (doom-darken bg 0.25) :foreground comments :extend t)
    (solaire-org-hide-face :foreground hidden)
 
+   ;;; ledger-mode
+   (ledger-font-payee-uncleared-face :foreground fg)
+   (ledger-font-posting-account-face :foreground cyan)
+
    ;;; web-mode
    (web-mode-json-context-face :foreground yellow)
    (web-mode-json-key-face :foreground teal)
