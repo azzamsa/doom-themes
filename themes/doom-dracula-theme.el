@@ -69,6 +69,7 @@ determine the exact padding."
    (fg-alt     '("#e2e2dc" "#bfbfbf" "brightwhite"  ))
 
    (grey       base4)
+   (overlay2   #9399b2)
    (red        '("#ff5555" "#ff6655" "red"          ))
    (orange     '("#ffb86c" "#ffbb66" "brightred"    ))
    (green      '("#50fa7b" "#55ff77" "green"        ))
@@ -86,8 +87,8 @@ determine the exact padding."
    (vertical-bar   (doom-darken base1 0.1))
    (selection      dark-blue)
    (builtin        orange)
-   (comments       (if doom-dracula-brighter-comments dark-cyan base5))
-   (doc-comments   (doom-lighten (if doom-dracula-brighter-comments dark-cyan base5) 0.25))
+   (comments       (if doom-dracula-brighter-comments dark-cyan overlay2))
+   (doc-comments       (if doom-dracula-brighter-comments dark-cyan overlay2))
    (constants      cyan)
    (functions      green)
    (keywords       magenta)
