@@ -31,7 +31,7 @@ determine the exact padding."
     "An clean 80's synthwave / outrun theme inspired by VS Code laserwave."
 
   ;; name        default   256       16
-  ((bg         '("#19151E" nil       nil             ))
+  ((bg         '("#000000" nil       nil             ))
    (bg-alt     '("#27212e" nil       nil             ))
    (base0      '("#222228" "black"   "black"         ))
    (base1      '("#24262D" "#222222" "brightblack"   ))
@@ -88,11 +88,12 @@ determine the exact padding."
     (when doom-laserwave-padded-modeline
       (if (integerp doom-laserwave-padded-modeline) doom-laserwave-padded-modeline 4)))
 
-   (modeline-fg     bg-alt)
+   (modeline-bg base3)
+   (modeline-fg base8)
    (modeline-fg-alt base6)
-   (modeline-bg base6)
-   (modeline-bg-inactive (doom-darken bg 0.1)))
 
+   (modeline-bg-inactive base0)
+   (modeline-fg-inactive base7))
 
   ;;;; Base theme face overrides
   ((lazy-highlight :background (doom-darken magenta 0.4) :foreground fg)
@@ -104,7 +105,7 @@ determine the exact padding."
    (mode-line-inactive
     :background modeline-bg-inactive :foreground modeline-fg-alt
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive)))
-   (mode-line-emphasis :foreground bg-alt)
+   (mode-line-emphasis :foreground modeline-fg-alt)
    (mode-line-highlight :background yellow :weight 'bold)
    ;;;; centaur-tabs
    (centaur-tabs-active-bar-face :background magenta)
